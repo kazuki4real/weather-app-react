@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-size: cover;
+  background-position: bottom ;
+  transition: 0.4 ease-out;
 }
 
-.App-header {
-  background-color: #282c34;
+.warm {
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.normal {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background-blend-mode: multiply,multiply;
+}
+
+main {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75)); */
+  padding: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar {
+  /* display: block; */
+  width: 100%;
+  padding: 20px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* margin-top: -25px; */
+
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.place {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date, .min-max {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box .temp {
+  margin: 30px auto;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 50px;
+  text-align: center;
+  color: black;
+  font-style: italic;
+
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+}
+
+.weather-box .weather {
+  color: #FFF;
+  font-size: 60px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
 }
