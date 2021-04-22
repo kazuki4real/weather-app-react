@@ -7,7 +7,7 @@ const WeatherMain = (props) => {
               {props.weather.name}, {props.weather.sys.country}
             </div>
             <div className="date">
-              {props.dateBuilder}
+              {props.dateSet}
             </div>
             <div className="weather-box">
               <div className="temp">

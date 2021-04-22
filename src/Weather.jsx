@@ -31,7 +31,7 @@ const Weather = () => {
   }
 
 
-  const dateBuilder = () => {
+  const dateSet = () => {
     switch (weather.timezone) {
       case (-14400):
         let newyork = new Date();
@@ -115,7 +115,7 @@ const Weather = () => {
           <WeatherMain
             query={query}
             weather={weather}
-            dateBuilder={dateBuilder()}
+            dateSet={dateSet()}
             weatherIcon={weatherIcon()}
           />
         ) : (
