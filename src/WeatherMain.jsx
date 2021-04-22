@@ -11,7 +11,7 @@ const WeatherMain = (props) => {
             </div>
             <div className="weather-box">
               <div className="temp">
-                <div className="clouds">
+                <div className="icon">
                   {props.weatherIcon}
                 </div>
                 {Math.round(props.weather.main.temp)}°

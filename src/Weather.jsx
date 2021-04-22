@@ -13,7 +13,7 @@ import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 
 const Weather = () => {
 
-  const API_KEY = 'f0bdae91ccf5e9a40eb2fed4faf710ac'
+  const API_KEY = '<YOUR OWN API KEY>'
 
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState('');
