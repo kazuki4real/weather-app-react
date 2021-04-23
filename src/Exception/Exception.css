@@ -1,0 +1,8 @@
+.exception {
+  color: rgb(248, 245, 245);
+  font-size: 52px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 5px 5px rgba(230, 13, 13, 0.5);
+  user-select: none;
+}

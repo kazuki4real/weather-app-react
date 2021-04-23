@@ -20,13 +20,11 @@ body {
 }
 
 .normal {
-  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-  background-blend-mode: multiply,multiply;
+  background-image: url('https://source.unsplash.com/random');
 }
 
 main {
   min-height: 100vh;
-  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75)); */
   padding: 25px;
 }
 
@@ -51,63 +49,4 @@ main {
 .search-box .search-bar:focus {
   background-color: rgba(255, 255, 255, 0.75);
 }
-
-.location-box .location {
-  color: #FFF;
-  font-size: 32px;
-  font-weight: 500;
-  text-align: center;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
-}
-
-.exception {
-  color: rgb(248, 245, 245);
-  font-size: 52px;
-  font-weight: 300;
-  text-align: center;
-  text-shadow: 5px 5px rgba(230, 13, 13, 0.5);
-}
-
-
-.location-box .date, .min-max {
-  color: #FFF;
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
-}
-
-.weather-box .temp {
-  margin: 30px auto;
-  font-weight: 400;
-  background-color: rgba(254, 247, 247, 0.2);
-  border-radius: 16px;
-  padding-bottom: 30px;
-  text-align: center;
-  color: black;
-  font-style: italic;
-
-  color: #FFF;
-  font-size: 102px;
-  font-weight: 900;
-}
-
-.weather-box .weather {
-  color: #FFF;
-  font-size: 60px;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
-}
-
-.icon {
-  margin-bottom: 10px;
-  font-size: 200px;
-  height: 200px;
-  color: rgb(252, 253, 253);
-  text-align: center;
-}
-
 
