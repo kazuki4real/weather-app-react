@@ -1,4 +1,5 @@
 import React from 'react'
+import WeatherDetail from '../WeatherDetail/WeatherDetail'
 import './WeatherMain.css'
 
 const WeatherMain = (props) => {
@@ -15,14 +16,12 @@ const WeatherMain = (props) => {
           <div className="icon">
             {props.weatherIcon}
           </div>
-          {Math.round(props.weather.main.temp)}°
-                <div className="min-max">
-            Highest：{Math.round(props.weather.main.temp_max)}°
-                  Lowest：{Math.round(props.weather.main.temp_min)}°
-                </div>
-        </div>
-        <div className="weather">
-          {props.weather.weather[0].main}
+          <WeatherDetail
+          temp={props.weather.main}
+          />
+          <div className="weather">
+            {props.weather.weather[0].main}
+          </div>
         </div>
       </div>
     </div>

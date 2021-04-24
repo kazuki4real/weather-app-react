@@ -11,7 +11,7 @@ body {
 .app {
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   background-size: cover;
-  background-position: bottom ;
+  background-position: bottom;
   transition: 0.4 ease-out;
 }
 
@@ -20,7 +20,10 @@ body {
 }
 
 .normal {
-  background-image: url('https://source.unsplash.com/random');
+  background: url("./asset/la-react.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 main {
@@ -30,7 +33,7 @@ main {
 
 .search-box {
   width: 100%;
-  margin: 0 0 75px;
+  margin: 0 0 35px;
 }
 
 .search-bar {
@@ -43,10 +46,8 @@ main {
   outline: none;
   background-color: rgba(255, 255, 255, 0.5);
   /* margin-top: -25px; */
-
 }
 
 .search-box .search-bar:focus {
   background-color: rgba(255, 255, 255, 0.75);
 }
-

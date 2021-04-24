@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../App.css';
-import WeatherMain from '../WeatherMain/WeatherMain'
-import Exception from '../Exception/Exception'
+import './App.css';
+import WeatherMain from './WeatherMain/WeatherMain'
+import Exception from './Exception/Exception'
 import TextField from '@material-ui/core/TextField';
 import CloudOutlinedIcon from '@material-ui/icons/CloudOutlined';
 import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 });
 
 
-const Weather = () => {
+const App = () => {
   const classes = useStyles();
   const API_KEY = ''
 
@@ -35,9 +35,6 @@ const Weather = () => {
         setQuery('');
         console.log(result)
       });
-    if (weather.cod === '400') {
-      return 'Type proper location';
-    }
   }
 
 
@@ -92,6 +89,10 @@ const Weather = () => {
     }
   }
 
+  const setValue = (e) => {
+    return setQuery(e.target.value);
+  }
+
 
   return (
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 17) ? 'warm' : 'app') : 'normal'}>
@@ -102,7 +103,7 @@ const Weather = () => {
             label="e.g. Tokyo" variant="filled"
             className="search-bar"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={setValue}
           />
         </form>
         {(typeof weather.main != "undefined") ? (
@@ -122,6 +123,6 @@ const Weather = () => {
   );
 }
 
-export default Weather;
+export default App;
 
 

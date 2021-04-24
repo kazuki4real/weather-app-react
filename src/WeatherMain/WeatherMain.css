@@ -17,16 +17,6 @@
   user-select: none;
 }
 
-.min-max {
-  color: rgb(104, 96, 96);
-  font-size: 25px;
-  font-weight: 400;
-  font-style: italic;
-  text-align: center;
-  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
-  user-select: none;
-}
-
 
 .weather-box .temp {
   margin: 30px auto;
