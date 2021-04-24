@@ -21,7 +21,7 @@ const useStyles = makeStyles({
 
 const App = () => {
   const classes = useStyles();
-  const API_KEY = ''
+  const API_KEY = '06be6f41a220071c3adb4a3834fe0408'
 
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState('');
